@@ -1,3 +1,5 @@
+package brewMe;
+
 import java.time.LocalDate;
 
 public class Post {
@@ -9,5 +11,4 @@ public class Post {
         this.owner = user;
         this.postTime = LocalDate.now();
     }
-
 }
