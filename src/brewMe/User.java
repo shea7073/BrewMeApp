@@ -1,3 +1,5 @@
+package brewMe;
+
 import java.util.ArrayList;
 
 abstract class User {
