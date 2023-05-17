@@ -1,7 +1,6 @@
 package brewMe;
-
 import java.util.ArrayList;
-import brewMe.Review.*;
+
 
 
 public class Admin extends User {
@@ -23,6 +22,7 @@ public class Admin extends User {
     // Overridden from User class
     @Override
     public void addpost(Post post) {
+        // no functionality, yet!
         System.out.println("will be implemented");
     }
 

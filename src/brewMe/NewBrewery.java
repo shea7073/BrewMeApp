@@ -26,6 +26,7 @@ public class NewBrewery extends Post {
         System.out.println("Welcome, Your brewery has been added to BrewMe!");
     }
 
+    // String representation of brewery
     public String describe() {
         return this.title + "\nLocated in " + this.location + "\nContact us at " + this.phoneNumber;
     }

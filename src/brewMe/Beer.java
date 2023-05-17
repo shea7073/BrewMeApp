@@ -1,6 +1,4 @@
 package brewMe;
-
-import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 
 public abstract class Beer {

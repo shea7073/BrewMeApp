@@ -29,6 +29,7 @@ public class PostReviewUseCase {
         // The reviewer can now add the post
         // The review is saved in the reviewers instance
         // Confirmation is printed to the console
+        // NOTE - I dont like this method. Beer should be checked at the same the post is posted.
         reviewer.addpost(review);
 
         // Get the newest review and print it to the console

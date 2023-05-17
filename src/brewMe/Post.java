@@ -9,6 +9,7 @@ public class Post {
 
     public Post(User user){
         this.owner = user;
+        // current time of post
         this.postTime = LocalDate.now();
     }
 }
