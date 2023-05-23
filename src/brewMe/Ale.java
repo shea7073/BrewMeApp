@@ -13,4 +13,8 @@ public class Ale extends Beer {
         this.yeast = "Saccharomyces cerevisiae";
     }
 
+    public String describe() {
+        return "Beer name:" + this.name + "\nBrewery: " + this.brewery + "\nABV: " + this.abv +
+                "%\nIBU: " + this.ibu + "\nType: Ale\n";
+    }
 }

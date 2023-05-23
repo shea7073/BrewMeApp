@@ -11,4 +11,8 @@ public class Lager extends Beer {
         this.fermentation = "Bottom-Fermented";
         this.yeast = "Saccharomyces pastorianus";
     }
+    public String describe() {
+        return "Beer name:" + this.name + "\nBrewery: " + this.brewery + "\nABV: " + this.abv +
+                "%\nIBU: " + this.ibu + "\nType: Lager\n";
+    }
 }

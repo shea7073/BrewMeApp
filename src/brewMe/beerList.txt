@@ -1,0 +1,13 @@
+Ale,King Julius,Tree House Brewing Company,8.2,78
+Ale,King JJJuliusSSS,Tree House Brewing Company,8.4,95
+Ale,Very Hazy,Tree House Brewing Company,8.6,49
+Ale,Very GGGreennn,Tree House Brewing Company,8.3,52
+Ale,The Session IPA,Anspach & Hobday,4.8,60
+Ale,2 Ruin,Two Roads Brewing Company,8.0,67
+Ale,Worker's Comp Saison,Two Roads Brewing Company,4.8,41
+Ale,Whirlpool,Night Shift Brewing,5.2,73
+Lager,Magic Lager,Magic Rock Brewing,4.2,54
+Lager,Twelve Percent Snappy,Twelve Percent Beer Project,5.0,68
+Lager,Monterey Beer,Alvarado Street Brewing,4.5,33
+Lager,Finer Things,Fieldwork Brewing Company,4.2,30
+Lager,Craft Lager,Steamworks Brewing Co.,5.0,30

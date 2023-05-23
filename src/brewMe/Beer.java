@@ -30,4 +30,8 @@ public abstract class Beer {
         this.beerReviews.add(review);
     }
 
+    public String describe(){
+        return null;
+    }
+
 }
