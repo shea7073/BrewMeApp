@@ -66,35 +66,47 @@ public class Admin extends User {
             return;
         }
 
-        Scanner file = new Scanner(fstream);
-        // loop through each line in the input file
-        while (file.hasNextLine()) {
-            // split line into array of arguments
-            String[] beerInfo = file.nextLine().split(",");
-            int numArguments = beerInfo.length;
-            // USER DEFINED EXCEPTION
-            // if wrong number of arguments provided then throw exception
-            if (numArguments != EXPECTED_ARGUMENTS) {
-                throw new ArgumentNumberException(numArguments, EXPECTED_ARGUMENTS);
-            }
-            // check beer type and then create beer object accordingly
-            if (Objects.equals(beerInfo[0], "Ale")){
-                // new ale object
-                Ale ale = new Ale(beerInfo[1], Double.parseDouble(beerInfo[3]), Integer.parseInt(beerInfo[4]), beerInfo[2]);
-                // save beer object
-                Beer.allBeers.add(ale);
-            } else if (Objects.equals(beerInfo[0], "Lager")) {
-                // new lager object
-                Lager lager = new Lager(beerInfo[1], Double.parseDouble(beerInfo[3]), Integer.parseInt(beerInfo[4]), beerInfo[2]);
-                // save beer object
-                Beer.allBeers.add(lager);
-            }
-            else {
-                // if bad data
-                System.out.println("Error reading beer on line" + Arrays.toString(beerInfo));
-            }
+        Scanner file = null;
+
+        try {
+            file = new Scanner(fstream);
+            // loop through each line in the input file
+            while (file.hasNextLine()) {
+                // split line into array of arguments
+                String[] beerInfo = file.nextLine().split(",");
+                int numArguments = beerInfo.length;
+                // USER DEFINED EXCEPTION
+                // if wrong number of arguments provided then throw exception
+                if (numArguments != EXPECTED_ARGUMENTS) {
+                    throw new ArgumentNumberException(numArguments, EXPECTED_ARGUMENTS);
+                }
+                // check beer type and then create beer object accordingly
+                if (Objects.equals(beerInfo[0], "Ale")){
+                    // new ale object
+                    Ale ale = new Ale(beerInfo[1], Double.parseDouble(beerInfo[3]), Integer.parseInt(beerInfo[4]), beerInfo[2]);
+                    // save beer object
+                    Beer.allBeers.add(ale);
+                } else if (Objects.equals(beerInfo[0], "Lager")) {
+                    // new lager object
+                    Lager lager = new Lager(beerInfo[1], Double.parseDouble(beerInfo[3]), Integer.parseInt(beerInfo[4]), beerInfo[2]);
+                    // save beer object
+                    Beer.allBeers.add(lager);
+                }
+                else {
+                    // if bad data
+                    System.out.println("Error reading beer on line" + Arrays.toString(beerInfo));
+                }
         }
-        file.close();
+
+        }
+        catch (Exception e ) {
+            e.printStackTrace();
+        }
+        finally {
+            assert file != null;
+            file.close();
+        }
+
     }
 
 
